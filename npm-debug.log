@@ -1,193 +1,372 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'E:\\nodejs\\\\node.exe',
-1 verbose cli   'E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'nodemon' ]
+1 verbose cli [ 'e:\\nodejs\\node.exe',
+1 verbose cli   'e:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
 2 info using npm@1.3.15
 3 info using node@v0.11.9
-4 verbose node symlink E:\nodejs\\node.exe
-5 warn package.json MEAN@0.0.3 No description
-6 warn package.json MEAN@0.0.3 No repository field.
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ 'e:\\angularWorkspace\\nagrajper\\SPAPP',
+5 verbose install   [ 'express', 'body-parser', 'ejs', 'express-session' ] ]
+6 info preinstall MEAN@0.0.3
 7 verbose readDependencies using package.json deps
-8 verbose cache add [ 'nodemon', null ]
-9 verbose cache add name=undefined spec="nodemon" args=["nodemon",null]
-10 verbose parsed url { protocol: null,
-10 verbose parsed url   slashes: null,
-10 verbose parsed url   auth: null,
-10 verbose parsed url   host: null,
-10 verbose parsed url   port: null,
-10 verbose parsed url   hostname: null,
-10 verbose parsed url   hash: null,
-10 verbose parsed url   search: null,
-10 verbose parsed url   query: null,
-10 verbose parsed url   pathname: 'nodemon',
-10 verbose parsed url   path: 'nodemon',
-10 verbose parsed url   href: 'nodemon' }
-11 silly lockFile 1625b929-nodemon nodemon
-12 verbose lock nodemon C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\1625b929-nodemon.lock
-13 silly lockFile 1625b929-nodemon nodemon
-14 silly lockFile 1625b929-nodemon nodemon
-15 verbose addNamed [ 'nodemon', '' ]
-16 verbose addNamed [ null, '*' ]
-17 silly lockFile 4f5e51c6-nodemon nodemon@
-18 verbose lock nodemon@ C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\4f5e51c6-nodemon.lock
-19 silly addNameRange { name: 'nodemon', range: '*', hasData: false }
-20 verbose url raw nodemon
-21 verbose url resolving [ 'http://registry.npmjs.org/', './nodemon' ]
-22 verbose url resolved http://registry.npmjs.org/nodemon
-23 info trying registry request attempt 1 at 16:49:22
-24 verbose etag "IUJX0OH51UFRZBQNJN47SWDK"
-25 http GET http://registry.npmjs.org/nodemon
-26 info retry will retry, error on last attempt: Error: Invalid protocol
-27 info trying registry request attempt 2 at 16:49:32
-28 verbose etag "IUJX0OH51UFRZBQNJN47SWDK"
-29 http GET http://registry.npmjs.org/nodemon
-30 info retry will retry, error on last attempt: Error: Invalid protocol
-31 info trying registry request attempt 3 at 16:50:32
-32 verbose etag "IUJX0OH51UFRZBQNJN47SWDK"
-33 http GET http://registry.npmjs.org/nodemon
-34 silly registry.get cb [ 304, undefined ]
-35 verbose etag nodemon from cache
-36 silly addNameRange number 2 { name: 'nodemon', range: '*', hasData: true }
-37 silly addNameRange versions [ 'nodemon',
-37 silly addNameRange   [ '0.1.4',
-37 silly addNameRange     '0.1.5',
-37 silly addNameRange     '0.1.6',
-37 silly addNameRange     '0.1.7',
-37 silly addNameRange     '0.1.8',
-37 silly addNameRange     '0.2.0',
-37 silly addNameRange     '0.2.1',
-37 silly addNameRange     '0.2.2',
-37 silly addNameRange     '0.3.0',
-37 silly addNameRange     '0.3.1',
-37 silly addNameRange     '0.3.2',
-37 silly addNameRange     '0.4.0',
-37 silly addNameRange     '0.4.1',
-37 silly addNameRange     '0.5.0',
-37 silly addNameRange     '0.5.1',
-37 silly addNameRange     '0.5.2',
-37 silly addNameRange     '0.5.3',
-37 silly addNameRange     '0.5.4',
-37 silly addNameRange     '0.5.5',
-37 silly addNameRange     '0.5.6',
-37 silly addNameRange     '0.5.7',
-37 silly addNameRange     '0.6.0',
-37 silly addNameRange     '0.6.1',
-37 silly addNameRange     '0.6.2',
-37 silly addNameRange     '0.6.3',
-37 silly addNameRange     '0.6.4',
-37 silly addNameRange     '0.6.5',
-37 silly addNameRange     '0.6.6',
-37 silly addNameRange     '0.6.7',
-37 silly addNameRange     '0.6.8',
-37 silly addNameRange     '0.6.9',
-37 silly addNameRange     '0.6.10',
-37 silly addNameRange     '0.6.11',
-37 silly addNameRange     '0.6.12',
-37 silly addNameRange     '0.6.13',
-37 silly addNameRange     '0.6.14',
-37 silly addNameRange     '0.6.15',
-37 silly addNameRange     '0.6.16',
-37 silly addNameRange     '0.6.17',
-37 silly addNameRange     '0.6.18',
-37 silly addNameRange     '0.6.19',
-37 silly addNameRange     '0.6.20',
-37 silly addNameRange     '0.6.21',
-37 silly addNameRange     '0.6.22',
-37 silly addNameRange     '0.6.23',
-37 silly addNameRange     '0.7.0',
-37 silly addNameRange     '0.7.1',
-37 silly addNameRange     '0.7.2',
-37 silly addNameRange     '0.7.3',
-37 silly addNameRange     '0.7.4',
-37 silly addNameRange     '0.7.5',
-37 silly addNameRange     '0.7.6',
-37 silly addNameRange     '0.7.7',
-37 silly addNameRange     '0.7.8',
-37 silly addNameRange     '0.7.10',
-37 silly addNameRange     '0.9.0',
-37 silly addNameRange     '0.9.1',
-37 silly addNameRange     '0.9.2',
-37 silly addNameRange     '0.9.3',
-37 silly addNameRange     '0.9.5',
-37 silly addNameRange     '0.9.6',
-37 silly addNameRange     '0.9.7',
-37 silly addNameRange     '0.9.10',
-37 silly addNameRange     '0.9.11',
-37 silly addNameRange     '0.9.12',
-37 silly addNameRange     '0.9.14',
-37 silly addNameRange     '0.9.16',
-37 silly addNameRange     '0.9.17',
-37 silly addNameRange     '1.0.0',
-37 silly addNameRange     '1.0.1',
-37 silly addNameRange     '1.0.2',
-37 silly addNameRange     '1.0.2-rc',
-37 silly addNameRange     '0.6.10-a',
-37 silly addNameRange     '1.0.2-rc3',
-37 silly addNameRange     '1.0.2-rc4',
-37 silly addNameRange     '1.0.3',
-37 silly addNameRange     '1.0.4',
-37 silly addNameRange     '1.0.5',
-37 silly addNameRange     '1.0.6',
-37 silly addNameRange     '1.0.7',
-37 silly addNameRange     '1.0.8',
-37 silly addNameRange     '1.0.9',
-37 silly addNameRange     '1.0.10',
-37 silly addNameRange     '1.0.11',
-37 silly addNameRange     '1.0.12',
-37 silly addNameRange     '1.0.13',
-37 silly addNameRange     '1.0.14',
-37 silly addNameRange     '1.0.15',
-37 silly addNameRange     '1.0.16',
-37 silly addNameRange     '1.0.17-rc1',
-37 silly addNameRange     '1.0.17-rc2',
-37 silly addNameRange     '1.0.17',
-37 silly addNameRange     '1.0.18',
-37 silly addNameRange     '1.0.19',
-37 silly addNameRange     '1.0.20',
-37 silly addNameRange     '1.1.0-alpha',
-37 silly addNameRange     '1.1.0',
-37 silly addNameRange     '1.1.1',
-37 silly addNameRange     '1.2.0',
-37 silly addNameRange     '1.2.1',
-37 silly addNameRange     '1.3.0-0',
-37 silly addNameRange     '1.3.0-1',
-37 silly addNameRange     '1.3.0-2',
-37 silly addNameRange     '1.3.0-3',
-37 silly addNameRange     '1.3.0-4',
-37 silly addNameRange     '1.3.0-5',
-37 silly addNameRange     '1.3.0-6',
-37 silly addNameRange     '1.3.0-7',
-37 silly addNameRange     '1.3.0',
-37 silly addNameRange     '1.3.1',
-37 silly addNameRange     '1.3.2' ] ]
-38 verbose addNamed [ 'nodemon', '1.3.2' ]
-39 verbose addNamed [ '1.3.2', '1.3.2' ]
-40 silly lockFile eb9c1afd-nodemon-1-3-2 nodemon@1.3.2
-41 verbose lock nodemon@1.3.2 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\eb9c1afd-nodemon-1-3-2.lock
-42 silly lockFile d730d792-js-org-nodemon-nodemon-1-3-2-tgz http://registry.npmjs.org/nodemon/-/nodemon-1.3.2.tgz
-43 verbose lock http://registry.npmjs.org/nodemon/-/nodemon-1.3.2.tgz C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\d730d792-js-org-nodemon-nodemon-1-3-2-tgz.lock
-44 verbose addRemoteTarball [ 'http://registry.npmjs.org/nodemon/-/nodemon-1.3.2.tgz',
-44 verbose addRemoteTarball   '9d54b0731bb2ce213169ebffd5bed9ea988ae9d8' ]
-45 info retry fetch attempt 1 at 16:50:32
-46 verbose fetch to= c:\Users\NAGRAJ~1\AppData\Local\Temp\npm-6256-nafHdJap\1421925632780-0.09891044744290411\tmp.tgz
-47 http GET http://registry.npmjs.org/nodemon/-/nodemon-1.3.2.tgz
-48 error Error: Invalid protocol
-48 error     at Request.init (E:\nodejs\node_modules\npm\node_modules\request\request.js:338:51)
-48 error     at new Request (E:\nodejs\node_modules\npm\node_modules\request\request.js:105:8)
-48 error     at request (E:\nodejs\node_modules\npm\node_modules\request\index.js:53:11)
-48 error     at makeRequest (E:\nodejs\node_modules\npm\lib\utils\fetch.js:87:13)
-48 error     at fetch_ (E:\nodejs\node_modules\npm\lib\utils\fetch.js:37:13)
-48 error     at E:\nodejs\node_modules\npm\lib\utils\fetch.js:24:5
-48 error     at E:\nodejs\node_modules\npm\node_modules\mkdirp\index.js:38:26
-48 error     at Object.oncomplete (fs.js:97:15)
-49 error If you need help, you may report this log at:
-49 error     <http://github.com/isaacs/npm/issues>
-49 error or email it to:
-49 error     <npm-@googlegroups.com>
-50 error System Windows_NT 6.1.7601
-51 error command "E:\\nodejs\\\\node.exe" "E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "nodemon"
-52 error cwd E:\angularWorkspace\nagrajper\SPAPP
-53 error node -v v0.11.9
-54 error npm -v 1.3.15
-55 verbose exit [ 1, true ]
+8 verbose already installed skipping express@~4.10.7 e:\angularWorkspace\nagrajper\SPAPP
+9 verbose cache add [ 'body-parser@~1.8.0', null ]
+10 verbose cache add name=undefined spec="body-parser@~1.8.0" args=["body-parser@~1.8.0",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'body-parser@~1.8.0',
+11 verbose parsed url   path: 'body-parser@~1.8.0',
+11 verbose parsed url   href: 'body-parser@~1.8.0' }
+12 verbose cache add name="body-parser" spec="~1.8.0" args=["body-parser","~1.8.0"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '~1.8.0',
+13 verbose parsed url   path: '~1.8.0',
+13 verbose parsed url   href: '~1.8.0' }
+14 verbose addNamed [ 'body-parser', '~1.8.0' ]
+15 verbose addNamed [ null, '>=1.8.0-0 <1.9.0-0' ]
+16 verbose cache add [ 'ejs@~1.0.0', null ]
+17 verbose cache add name=undefined spec="ejs@~1.0.0" args=["ejs@~1.0.0",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'ejs@~1.0.0',
+18 verbose parsed url   path: 'ejs@~1.0.0',
+18 verbose parsed url   href: 'ejs@~1.0.0' }
+19 verbose cache add name="ejs" spec="~1.0.0" args=["ejs","~1.0.0"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '~1.0.0',
+20 verbose parsed url   path: '~1.0.0',
+20 verbose parsed url   href: '~1.0.0' }
+21 verbose addNamed [ 'ejs', '~1.0.0' ]
+22 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+23 verbose cache add [ 'express-session@~1.7.6', null ]
+24 verbose cache add name=undefined spec="express-session@~1.7.6" args=["express-session@~1.7.6",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'express-session@~1.7.6',
+25 verbose parsed url   path: 'express-session@~1.7.6',
+25 verbose parsed url   href: 'express-session@~1.7.6' }
+26 verbose cache add name="express-session" spec="~1.7.6" args=["express-session","~1.7.6"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '~1.7.6',
+27 verbose parsed url   path: '~1.7.6',
+27 verbose parsed url   href: '~1.7.6' }
+28 verbose addNamed [ 'express-session', '~1.7.6' ]
+29 verbose addNamed [ null, '>=1.7.6-0 <1.8.0-0' ]
+30 silly lockFile b68cd600-body-parser-1-8-0 body-parser@~1.8.0
+31 verbose lock body-parser@~1.8.0 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\b68cd600-body-parser-1-8-0.lock
+32 silly lockFile 9e596aab-ejs-1-0-0 ejs@~1.0.0
+33 verbose lock ejs@~1.0.0 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\9e596aab-ejs-1-0-0.lock
+34 silly lockFile 2fe263a1-express-session-1-7-6 express-session@~1.7.6
+35 verbose lock express-session@~1.7.6 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\2fe263a1-express-session-1-7-6.lock
+36 silly addNameRange { name: 'body-parser',
+36 silly addNameRange   range: '>=1.8.0-0 <1.9.0-0',
+36 silly addNameRange   hasData: false }
+37 silly addNameRange { name: 'express-session',
+37 silly addNameRange   range: '>=1.7.6-0 <1.8.0-0',
+37 silly addNameRange   hasData: false }
+38 silly addNameRange { name: 'ejs', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+39 verbose url raw body-parser
+40 verbose url resolving [ 'http://registry.npmjs.org/', './body-parser' ]
+41 verbose url resolved http://registry.npmjs.org/body-parser
+42 info trying registry request attempt 1 at 09:46:23
+43 verbose etag "XJOGO54YFQ0Z2ZJ6NMTXWZSM"
+44 http GET http://registry.npmjs.org/body-parser
+45 verbose url raw express-session
+46 verbose url resolving [ 'http://registry.npmjs.org/', './express-session' ]
+47 verbose url resolved http://registry.npmjs.org/express-session
+48 info trying registry request attempt 1 at 09:46:23
+49 verbose etag "9KLUJ0104G13H5F9XKYQDHP0B"
+50 http GET http://registry.npmjs.org/express-session
+51 verbose url raw ejs
+52 verbose url resolving [ 'http://registry.npmjs.org/', './ejs' ]
+53 verbose url resolved http://registry.npmjs.org/ejs
+54 info trying registry request attempt 1 at 09:46:23
+55 verbose etag "A5830KFEC470CS4Z2VOATHNF8"
+56 http GET http://registry.npmjs.org/ejs
+57 http 200 http://registry.npmjs.org/express-session
+58 silly registry.get cb [ 200,
+58 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+58 silly registry.get     etag: '"9KLUJ0104G13H5F9XKYQDHP0B"',
+58 silly registry.get     'content-type': 'application/json',
+58 silly registry.get     'cache-control': 'max-age=60',
+58 silly registry.get     'content-length': '68460',
+58 silly registry.get     'accept-ranges': 'bytes',
+58 silly registry.get     date: 'Fri, 23 Jan 2015 04:16:23 GMT',
+58 silly registry.get     via: '1.1 varnish',
+58 silly registry.get     age: '1',
+58 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+58 silly registry.get     'x-cache': 'HIT',
+58 silly registry.get     'x-cache-hits': '2',
+58 silly registry.get     'x-timer': 'S1421986583.561238,VS0,VE0',
+58 silly registry.get     vary: 'Accept',
+58 silly registry.get     connection: 'close' } ]
+59 http 200 http://registry.npmjs.org/body-parser
+60 silly registry.get cb [ 200,
+60 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+60 silly registry.get     etag: '"XJOGO54YFQ0Z2ZJ6NMTXWZSM"',
+60 silly registry.get     'content-type': 'application/json',
+60 silly registry.get     'cache-control': 'max-age=60',
+60 silly registry.get     'content-length': '79859',
+60 silly registry.get     'accept-ranges': 'bytes',
+60 silly registry.get     date: 'Fri, 23 Jan 2015 04:16:23 GMT',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     age: '0',
+60 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+60 silly registry.get     'x-cache': 'HIT',
+60 silly registry.get     'x-cache-hits': '6',
+60 silly registry.get     'x-timer': 'S1421986583.565016,VS0,VE0',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     connection: 'close' } ]
+61 silly addNameRange number 2 { name: 'express-session',
+61 silly addNameRange   range: '>=1.7.6-0 <1.8.0-0',
+61 silly addNameRange   hasData: true }
+62 silly addNameRange versions [ 'express-session',
+62 silly addNameRange   [ '1.0.0',
+62 silly addNameRange     '1.0.1',
+62 silly addNameRange     '1.0.2',
+62 silly addNameRange     '1.0.3',
+62 silly addNameRange     '1.0.4',
+62 silly addNameRange     '1.1.0',
+62 silly addNameRange     '1.2.0',
+62 silly addNameRange     '1.2.1',
+62 silly addNameRange     '1.3.0',
+62 silly addNameRange     '1.3.1',
+62 silly addNameRange     '1.4.0',
+62 silly addNameRange     '1.5.0',
+62 silly addNameRange     '1.5.1',
+62 silly addNameRange     '1.5.2',
+62 silly addNameRange     '1.6.0',
+62 silly addNameRange     '1.6.1',
+62 silly addNameRange     '1.6.2',
+62 silly addNameRange     '1.6.3',
+62 silly addNameRange     '1.6.4',
+62 silly addNameRange     '1.6.5',
+62 silly addNameRange     '1.7.0',
+62 silly addNameRange     '1.7.1',
+62 silly addNameRange     '1.7.2',
+62 silly addNameRange     '1.7.3',
+62 silly addNameRange     '1.7.4',
+62 silly addNameRange     '1.7.5',
+62 silly addNameRange     '1.7.6',
+62 silly addNameRange     '1.8.0',
+62 silly addNameRange     '1.8.1',
+62 silly addNameRange     '1.8.2',
+62 silly addNameRange     '1.9.0',
+62 silly addNameRange     '1.9.1',
+62 silly addNameRange     '1.9.2',
+62 silly addNameRange     '1.9.3',
+62 silly addNameRange     '1.10.0',
+62 silly addNameRange     '1.10.1' ] ]
+63 verbose addNamed [ 'express-session', '1.7.6' ]
+64 verbose addNamed [ '1.7.6', '1.7.6' ]
+65 silly lockFile 4ee4039e-express-session-1-7-6 express-session@1.7.6
+66 verbose lock express-session@1.7.6 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\4ee4039e-express-session-1-7-6.lock
+67 silly lockFile e26854c5-ession-express-session-1-7-6-tgz http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+68 verbose lock http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\e26854c5-ession-express-session-1-7-6-tgz.lock
+69 silly addNameRange number 2 { name: 'body-parser',
+69 silly addNameRange   range: '>=1.8.0-0 <1.9.0-0',
+69 silly addNameRange   hasData: true }
+70 silly addNameRange versions [ 'body-parser',
+70 silly addNameRange   [ '1.0.0',
+70 silly addNameRange     '1.0.1',
+70 silly addNameRange     '1.0.2',
+70 silly addNameRange     '1.1.0',
+70 silly addNameRange     '1.1.1',
+70 silly addNameRange     '1.1.2',
+70 silly addNameRange     '1.2.0',
+70 silly addNameRange     '1.2.1',
+70 silly addNameRange     '1.2.2',
+70 silly addNameRange     '1.3.0',
+70 silly addNameRange     '1.3.1',
+70 silly addNameRange     '1.4.0',
+70 silly addNameRange     '1.4.1',
+70 silly addNameRange     '1.4.2',
+70 silly addNameRange     '1.4.3',
+70 silly addNameRange     '1.5.0',
+70 silly addNameRange     '1.5.1',
+70 silly addNameRange     '1.5.2',
+70 silly addNameRange     '1.6.0',
+70 silly addNameRange     '1.6.1',
+70 silly addNameRange     '1.6.2',
+70 silly addNameRange     '1.6.3',
+70 silly addNameRange     '1.6.4',
+70 silly addNameRange     '1.6.5',
+70 silly addNameRange     '1.6.6',
+70 silly addNameRange     '1.6.7',
+70 silly addNameRange     '1.7.0',
+70 silly addNameRange     '1.8.0',
+70 silly addNameRange     '1.8.1',
+70 silly addNameRange     '1.8.2',
+70 silly addNameRange     '1.8.3',
+70 silly addNameRange     '1.8.4',
+70 silly addNameRange     '1.9.0',
+70 silly addNameRange     '1.9.1',
+70 silly addNameRange     '1.9.2',
+70 silly addNameRange     '1.9.3',
+70 silly addNameRange     '1.10.0',
+70 silly addNameRange     '1.10.1',
+70 silly addNameRange     '1.10.2' ] ]
+71 verbose addNamed [ 'body-parser', '1.8.4' ]
+72 verbose addNamed [ '1.8.4', '1.8.4' ]
+73 silly lockFile 5cba912c-body-parser-1-8-4 body-parser@1.8.4
+74 verbose lock body-parser@1.8.4 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\5cba912c-body-parser-1-8-4.lock
+75 verbose addRemoteTarball [ 'http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz',
+75 verbose addRemoteTarball   'e1c369ba2176f7afdb79e77d65dcd8c7c46e48a5' ]
+76 info retry fetch attempt 1 at 09:46:24
+77 verbose fetch to= c:\Users\NAGRAJ~1\AppData\Local\Temp\npm-1096-GeSbmyPs\1421986584030-0.28728040331043303\tmp.tgz
+78 silly lockFile c28335be-ody-parser-body-parser-1-8-4-tgz http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+79 verbose lock http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\c28335be-ody-parser-body-parser-1-8-4-tgz.lock
+80 http GET http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+81 verbose addRemoteTarball [ 'http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz',
+81 verbose addRemoteTarball   'd497e04bc13b3f9a8bd8c70bb0cdc16f2e028898' ]
+82 info retry fetch attempt 1 at 09:46:24
+83 verbose fetch to= c:\Users\NAGRAJ~1\AppData\Local\Temp\npm-1096-GeSbmyPs\1421986584046-0.16634860751219094\tmp.tgz
+84 http GET http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+85 http 200 http://registry.npmjs.org/ejs
+86 silly registry.get cb [ 200,
+86 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+86 silly registry.get     etag: '"A5830KFEC470CS4Z2VOATHNF8"',
+86 silly registry.get     'content-type': 'application/json',
+86 silly registry.get     'cache-control': 'max-age=60',
+86 silly registry.get     'content-length': '40602',
+86 silly registry.get     'accept-ranges': 'bytes',
+86 silly registry.get     date: 'Fri, 23 Jan 2015 04:16:23 GMT',
+86 silly registry.get     via: '1.1 varnish',
+86 silly registry.get     age: '0',
+86 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+86 silly registry.get     'x-cache': 'HIT',
+86 silly registry.get     'x-cache-hits': '1',
+86 silly registry.get     'x-timer': 'S1421986583.562858,VS0,VE237',
+86 silly registry.get     vary: 'Accept',
+86 silly registry.get     connection: 'close' } ]
+87 silly addNameRange number 2 { name: 'ejs', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+88 silly addNameRange versions [ 'ejs',
+88 silly addNameRange   [ '0.0.1',
+88 silly addNameRange     '0.0.2',
+88 silly addNameRange     '0.0.3',
+88 silly addNameRange     '0.0.4',
+88 silly addNameRange     '0.1.0',
+88 silly addNameRange     '0.2.0',
+88 silly addNameRange     '0.2.1',
+88 silly addNameRange     '0.3.0',
+88 silly addNameRange     '0.3.1',
+88 silly addNameRange     '0.4.0',
+88 silly addNameRange     '0.4.1',
+88 silly addNameRange     '0.4.2',
+88 silly addNameRange     '0.4.3',
+88 silly addNameRange     '0.5.0',
+88 silly addNameRange     '0.6.0',
+88 silly addNameRange     '0.6.1',
+88 silly addNameRange     '0.7.0',
+88 silly addNameRange     '0.7.1',
+88 silly addNameRange     '0.7.2',
+88 silly addNameRange     '0.8.0',
+88 silly addNameRange     '0.8.1',
+88 silly addNameRange     '0.8.2',
+88 silly addNameRange     '0.8.3',
+88 silly addNameRange     '0.8.4',
+88 silly addNameRange     '0.8.5',
+88 silly addNameRange     '0.8.6',
+88 silly addNameRange     '0.8.8',
+88 silly addNameRange     '1.0.0',
+88 silly addNameRange     '2.0.2',
+88 silly addNameRange     '2.0.3',
+88 silly addNameRange     '2.0.4',
+88 silly addNameRange     '2.0.5',
+88 silly addNameRange     '2.0.6',
+88 silly addNameRange     '2.0.7',
+88 silly addNameRange     '2.0.8',
+88 silly addNameRange     '2.1.1',
+88 silly addNameRange     '2.1.2',
+88 silly addNameRange     '2.1.3',
+88 silly addNameRange     '2.1.4',
+88 silly addNameRange     '2.2.1',
+88 silly addNameRange     '2.2.2' ] ]
+89 verbose addNamed [ 'ejs', '1.0.0' ]
+90 verbose addNamed [ '1.0.0', '1.0.0' ]
+91 silly lockFile 3b9d58f7-ejs-1-0-0 ejs@1.0.0
+92 verbose lock ejs@1.0.0 C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\3b9d58f7-ejs-1-0-0.lock
+93 http 403 http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+94 http 403 http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+95 silly lockFile 17b0f0b0-stry-npmjs-org-ejs-ejs-1-0-0-tgz http://registry.npmjs.org/ejs/-/ejs-1.0.0.tgz
+96 verbose lock http://registry.npmjs.org/ejs/-/ejs-1.0.0.tgz C:\Users\nagraj_sunkeri\AppData\Roaming\npm-cache\17b0f0b0-stry-npmjs-org-ejs-ejs-1-0-0-tgz.lock
+97 error fetch failed http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+98 silly lockFile e26854c5-ession-express-session-1-7-6-tgz http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+99 silly lockFile e26854c5-ession-express-session-1-7-6-tgz http://registry.npmjs.org/express-session/-/express-session-1.7.6.tgz
+100 verbose addRemoteTarball [ 'http://registry.npmjs.org/ejs/-/ejs-1.0.0.tgz',
+100 verbose addRemoteTarball   'c9c60a48a46ee452fb32a71c317b95e5aa1fcb3d' ]
+101 error fetch failed http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+102 silly lockFile c28335be-ody-parser-body-parser-1-8-4-tgz http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+103 silly lockFile c28335be-ody-parser-body-parser-1-8-4-tgz http://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz
+104 info retry fetch attempt 1 at 09:46:24
+105 verbose fetch to= c:\Users\NAGRAJ~1\AppData\Local\Temp\npm-1096-GeSbmyPs\1421986584157-0.9115816808771342\tmp.tgz
+106 silly lockFile 4ee4039e-express-session-1-7-6 express-session@1.7.6
+107 silly lockFile 4ee4039e-express-session-1-7-6 express-session@1.7.6
+108 silly lockFile 5cba912c-body-parser-1-8-4 body-parser@1.8.4
+109 silly lockFile 5cba912c-body-parser-1-8-4 body-parser@1.8.4
+110 http GET http://registry.npmjs.org/ejs/-/ejs-1.0.0.tgz
+111 silly lockFile b68cd600-body-parser-1-8-0 body-parser@~1.8.0
+112 silly lockFile b68cd600-body-parser-1-8-0 body-parser@~1.8.0
+113 silly lockFile 2fe263a1-express-session-1-7-6 express-session@~1.7.6
+114 silly lockFile 2fe263a1-express-session-1-7-6 express-session@~1.7.6
+115 error Error: 403 Forbidden
+115 error     at WriteStream.<anonymous> (e:\nodejs\node_modules\npm\lib\utils\fetch.js:57:12)
+115 error     at WriteStream.EventEmitter.emit (events.js:120:20)
+115 error     at fs.js:1569:14
+115 error     at e:\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:103:5
+115 error     at Object.oncomplete (fs.js:97:15)
+116 error If you need help, you may report this log at:
+116 error     <http://github.com/isaacs/npm/issues>
+116 error or email it to:
+116 error     <npm-@googlegroups.com>
+117 error System Windows_NT 6.1.7601
+118 error command "e:\\nodejs\\node.exe" "e:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+119 error cwd e:\angularWorkspace\nagrajper\SPAPP
+120 error node -v v0.11.9
+121 error npm -v 1.3.15
+122 verbose exit [ 1, true ]
