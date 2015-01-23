@@ -104,10 +104,10 @@ th,td {
 .table-striped > tbody > tr:nth-child(even) > th {
 	background-color: #F9F9B7;
 }
-.add-new-group_wrap .label-warning {
+.add-new-group_wrap .bg-warning {
 	margin-top: 8px;
 }
 
-#subGroupForm  .label-warning {
+#subGroupForm  .bg-warning {
 	margin-top: 8px;
 }

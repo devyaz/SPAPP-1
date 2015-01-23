@@ -69,16 +69,13 @@ app.controller('ResultsController', function ($scope, $http, $location, sharedSe
 				break;
 			}			
 		}
-		
-		
+				
 		if(!duplication) {
 			$http.get('/add/group/' + $scope.groupName).success(function(data) {		
 				console.log('HI');
 
 				$http.get('groups').success(function(data) {
-					$scope.groups = data;
-					console.log('HELLO' + $scope.groups);
-					$location.url('/');
+					$scope.groups = data;					
 				});			
 			});
 		}
