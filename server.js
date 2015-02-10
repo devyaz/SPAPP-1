@@ -1,11 +1,11 @@
-var express = require('./config/express'),
-	connection = require('./config/db');
+var express = require('./config/express');
+	//connection = require('./config/db');
 
 var app = express();
 app.listen(3000);
 //module.exports = app;
 
-var db = connection.getDBConnection();
+//var db = connection.getDBConnection();
 
 console.log('Server running at http://localhost:3000/');
 

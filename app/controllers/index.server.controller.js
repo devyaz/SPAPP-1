@@ -1,3 +1,20 @@
+var mongo = require('mongodb');
+ 
+var Server = mongo.Server,
+    Db = mongo.Db,
+    BSON = mongo.BSONPure;
+
+var server = new Server('localhost', 27017, {auto_reconnect: true});
+db = new Db('SPAPP', server, {w:1});
+
+db.open(function(err, db) {
+    if(!err) {
+        console.log("Connected to 'SPAPP' database");       
+    } else {
+    	console.log("ERROR: Not connected to DB");
+    }
+});
+
 exports.render = function(req, res) {
 
 	if (req.session.lastVisit) {
@@ -11,10 +28,22 @@ exports.render = function(req, res) {
 	})
 };
 
-exports.findAll = function(req, res) {
-    res.send([{name:'wine1'}, {name:'wine2'}, {name:'wine3'}]);
+exports.findAllGroups = function(req, res) {
+	db.collection('groups', function(err, collection) {
+        collection.find().toArray(function(err, items) {
+            res.send(items);
+        });
+    });
+    
 };
  
-exports.findById = function(req, res) {
-    res.send({id:req.params.id, name: "The Name", description: "description"});
+exports.findGroupById = function(req, res) {    
+	db.collection('groups', function(err, collection) {
+        collection.findOne({_id: new BSON.ObjectID(req.params.id)}, function(err, items) {
+            res.send(items);
+        });
+	});
+	
 };
+
+
