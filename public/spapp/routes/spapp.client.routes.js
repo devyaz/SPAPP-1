@@ -1,12 +1,12 @@
 app.config(['$routeProvider', function ($routeProvider){
 	$routeProvider.when('/', {		
 		//templateUrl: 'templates/listGroups.html',
-		templateUrl: 'example/views/example.client.view.html',
+		templateUrl: 'spapp/views/spapp.client.view.html',
 		controller: 'ResultsController'
 	}).when('/groupAdd', {		
 		controller: 'groupAddController'
 	}).when('/addSubgroup/:groupId', {
-		templateUrl: 'example/views/example.client.addSubgroup.html',
+		templateUrl: 'spapp/views/spapp.client.addSubgroup.html',
 		controller: 'subGroupAddController'
 	}).otherwise({
 		redirectTo: '/errorPage'
